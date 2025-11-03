@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/professores")
+@RequestMapping("/professor")
 public class ProfessorController {
 
     @Autowired
@@ -49,5 +49,6 @@ public class ProfessorController {
     public void atualizarProfessorPorId(@PathVariable Long id, @RequestBody Professor atualizarProfessor){
         professorService.atualizarProfessorPorId(id, atualizarProfessor);
     }
+
 
 }
